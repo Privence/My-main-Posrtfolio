@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="aside-title">
+                <div class="my-name">
+                    <span class="brand">
+                        Privence
+                    </span>
+                </div>
+                <div class="list-links">
+                    <ul class="main-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <li class="cross-btn" onclick=hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                    <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg>
+                    </a></li>
+                    <ul  class="hide">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <section class="home-sec" id="home">
+            <div class="home-box">
+                <div class="messages">
+                    <div class="picture"></div>
+                    <h2>Hello, my name is <span class="names">Privence Machele</span></h2>
+                    <h3>i'm a <span class="quali">Software Developer</span></h3>
+                    <p>
+                        I am actively seeking a position with a firm to apply my educational experience in 
+                        programming language theory, computational complexity theory, and computer graphics. 
+                        Willing to learn through practical, hands-on projects and expand my knowledge under 
+                        expert guidance.
+                    </p>
+                    <button class="about-button" onclick=openModal()>More about me</button>
+                    <div class="social">
+                        <a href="https://www.instagram.com/privence_mashele/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="30px" height="30px"><radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"/><stop offset=".328" stop-color="#ff543f"/><stop offset=".348" stop-color="#fc5245"/><stop offset=".504" stop-color="#e64771"/><stop offset=".643" stop-color="#d53e91"/><stop offset=".761" stop-color="#cc39a4"/><stop offset=".841" stop-color="#c837ab"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"/><stop offset=".999" stop-color="#4168c9" stop-opacity="0"/></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"/><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"/><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"/><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"/></svg></a>
+                        <a href="https://www.linkedin.com/in/privence-machele/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="30px" height="30px"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"/><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"/></svg></a>
+                        <a href="https://web.facebook.com/privence.privence" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="30px" height="30px"><linearGradient id="Ld6sqrtcxMyckEl6xeDdMa" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"/><stop offset="1" stop-color="#007ad9"/></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"/><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"/></svg></a>
+                    </div>
+                </div>
+                
+                <div class="line-one"></div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="about-sec" id="about">
+            <div class="about-box">
+                <h1>ABOUT ME</h1>
+                <h3>I'm Mathematical Science graduate majored with <span class="studies">Computer Science</span> and <span class="studies">Statistics</span></h3>
+                <p>I recently graduated from the University of Limpopo, i now know how to utilize computer science analytics with technical sources such as C++, Java,
+                    SQL and more. In addition i even majored with Statistics where i managed to 
+                   learn more statistical methods and statistical analysis tools such as EXCEL and SAS
+                </p>
+                <div class="info-box">
+                    <div class="first-info">
+                        <p><span class="credential">Birthday</span> : 08 April 2001 </p>
+                        <p><span class="credential">GitHub</span> : github.com/privence </p>
+                        <p><span class="credential">Degree</span> : CS nad Statistucs</p>
+                        <p><span class="credential">City</span> : Johannesburg</p>
+                    </div>
+                    <div class="first-info">
+                        <p><span class="credential">Age</span> : 23</p>
+                        <p><span class="credential">Email</span> : macheleprivence@gmail.com</p>
+                        <p><span class="credential">Phone</span> : 0785359276</p>
+                        <p><span class="credential">Job availability</span> : immidiately</p>
+                    </div>
+                </div>
+
+                <div class="info-buttons">
+                    <a href="MyCV Machele.pdf" download="MyDocument.pdf" class="download-button"><button>Download CV</button></a> <button onclick=openHire()>Hire ME</button>
+                </div>
+                <section id="container-box">
+                    <div class="con-info">
+                        <a href="" class="hide-hire"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                        <p>call me on 0785359276 or Email me on: macheleprivence@gmail.com</p>
+                    </div>
+                </section>
+                <div class="school">
+                    <div class="education">
+                        <h3>EDUCATION</h3>
+                        <H4>2020-2022</H4>
+                        <p><span class="credential">Bsc Mathematical Science</span> <br> Data Structures, Databases, Computer Networks, Operating Systerm, Artificial intelligence, Sampling Theory, Statistical inference, Applied linear regression, Time series, and Theory of distribution </p>
+                        
+                    </div>
+                    <div class="education">
+                        <h3>EXPERIENCE</h3>
+                        <H4>2020/MAR-2020/DEC</H4>
+                        <p><span class="credential">Computer Science lab at the university of Limpopo</span> <br>  Familiarize students with software and assist them 
+                            completing school projects.
+                            Enforce procedures for the use of equipment, supplies, 
+                            material, software, hardware, and peripherals.
+                            Troubleshoots and diagnoses basic problems with 
+                            computer equipment. Performs minor maintenance and 
+                            repair an equipment, as necessary.
+                            Responds to questions from students, staff, and 
+                            instructors with information relating to the computer 
+                            laboratory.
+                            Maintain records of activities undertaken in the 
+                            computer lab</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="services-sec" id="services">
+            <div class="services-box">
+                <h1>SERVICES</h1>
+                <div class="services-main-box">
+                    
+                    <div class="web">
+                        <h4>WEB DEVELOPER</h4>
+                        <P>I develop responsive websites using the following technologies, HTML, CSS, JavaScript, Bootstrap, React.js, Angular, MySql, and API</P>
+                    </div>
+                    <div class="web">
+                        <h4>SOFTWARE DEVELOPER</h4>
+                        <P>I develop Desktop and android application using the following technologies, Java, C++, PHP, SQL, and Android studio</P>
+                    </div>
+                    <div class="web">
+                        <h4>DATABASE ADMINISTRATER</h4>
+                        <P>I design, develop, and mantain relational databases using MySQL WorkBench</P>
+                    </div>
+                    <div class="web">
+                        <h4>MACHINE LEARNIGN ENGINEER</h4>
+                        <P>I specialize in designing and developing machine learning systems. Develop machine learning and Artificial intelligence solutions. i can create predictive models and identify business strategies</P>
+                    </div>
+                    <div class="web">
+                        <h4>SOFTWARE TESTER</h4>
+                        <P>I can develop, test algorithms, software and data structures, i can also manatain and fix machanical process that can allow tech syaterm to operate effectively</P>
+                    </div>
+                    <div class="web">
+                        <h4>STATISTICAL ANALYST</h4>
+                        <P>I can collect, organize, analyze, interprete, and present the data in applying statistics to a specific, industrial, or social problem</P>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="portfolio-sec" id="portfolio">
+            <div class="portfolio-box">
+                <h1>PORTFOLIO</h1>
+                <h3>
+                    My Last projects :
+                </h3> 
+                <div class="projexts">
+                    <div class="grocery">
+                        <a href="#"><img src="images/grocery.jpg" alt="" class="gro-pic"></a><br>
+                        <button>More info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="contact-sec" id="contact">
+            <div class="contact-box">
+                    <h1>CONTACT ME</h1>
+                    <div class="contact-info">
+                        <h4><span class="sub-title">Have Any Questions?</span></h4>
+                        <p>I'M AT YOUR SERVICE</p>
+                        <div class="contact-me">
+                            <div class="call">
+                                <h6>
+                                    Call me on
+                                </h6>
+                                <p>0785359276</p>
+                            </div>
+                            <div class="call">
+                                <h6>
+                                    Address
+                                </h6>
+                                <p>100 7th kew road Alexandra</p>
+                            </div>
+                            <div class="call">
+                                <h6>
+                                    Email
+                                </h6>
+                                <p>macheleprivence@gmail.com</p>
+                            </div>
+                            <div class="call">
+                                <h6>
+                                    LinkedIn
+                                </h6>
+                                <p>linkedIn.com/privencemachele</p>
+                            </div>
+                        </div>
+                        <div class="send">
+                            <h2><span class="sub-title">SEND ME AN EMAIL</span></h2>
+                            <H4>I'M WAY RESPONSIVE TO MESSAGES</H4>
+                            <div class="dark-box">
+                                <div class="dark" onclick=darkmode()>
+
+                                </div>
+                                <div class="light" onclick=lightmode()>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section id="more-about-me">
+            <div class="container">
+
+                <h1 class="sub-title">More About Me</h1>
+                
+                <p><i>Hi, I'm <strong>Privence Machele</strong>, a passionate web developer with a knack for creating dynamic and user-friendly websites. With a background in <strong>Computer Science</strong>, I specialize in <strong>front-end development and UX/UI design</strong>.</i></p>
+                
+                <div class="services-main-box">
+                    <div class="web">
+                        <h2 class="sub-title">Professional Background</h2>
+                        <p>I began my journey in web development <strong>3 years</strong> ago, when i was doing my final year at the university and since then, I've worked with several student and mentors, One of my proudest achievements was <strong>leading the redesign of an e-commerce platform</strong>, which <strong>resulted in a 30% increase in user engagement and a 20% boost in sales</strong>.</p>               
+                    </div>
+                    <div class="web">
+                        <h2 class="sub-title">Skills and Expertise</h2>
+                        <ul>
+                            <li>Front-end development with HTML, CSS, and JavaScript</li>
+                            <li>Back-end development using Node.js and Express</li>
+                            <li>Responsive design and UX/UI principles</li>
+                            <li>React and Angular frameworks</li>
+                            <li>Version control with Git and GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="web">
+                        <h2 class="sub-title">Education</h2>
+                        <p>I hold a <strong>Bachelor's Degree</strong> in <strong>Computer Science</strong> from <strong>University of Limpopo</strong>, where I developed a solid foundation in programming, web development, and software engineering.</p>       
+                    </div>
+                    <div class="web">
+                        <h2 class="sub-title">Personal Touch</h2>
+                        <p>When I'm not coding, you can find me <strong>Playing football</strong>, playing video games, or volunteering as <strong>Mathematics teacher at high schools</strong>. I believe that a balanced life fuels creativity and innovation.</p>
+                    </div>
+                    <div class="web">
+                        <h2 class="sub-title">Values and Philosophy</h2>
+                        <p>I believe in the power of technology to transform lives and businesses. My approach is always user-centric, ensuring that every project I undertake is not only functional but also delightful to use. I'm committed to continuous learning and staying updated with the latest industry trends.</p>
+                    </div>
+                </div>         
+                <div class="contact">
+                    <p>I'm always excited to connect with like-minded professionals or to discuss potential collaborations. Feel free to <a href="#portfolio" id="check-portfolio" onclick="closeModal()">check out my portfolio</a>, connect with me on <a href="https://linkedin.com/privencemachele">LinkedIn</a>, or <a href="contact.html">drop me a message</a> through the contact form.</p>
+                </div>
+                <button class="close-button" onclick="closeModal()">Close</button>
+            </div>
+        </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>

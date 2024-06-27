@@ -1,0 +1,406 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f5fcfa;
+    background-size: cover;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.aside-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.704);
+    backdrop-filter: blur(10px); 
+    top: 0;
+    right: 0;
+    align-items: center;
+    list-style: none;
+}
+
+.aside-title ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.aside-title ul li a{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: orange;
+}
+
+.brand{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+    font-style: italic;
+    color: orange;
+}
+
+.home-sec{
+    height: fit-content;
+}
+
+.about-sec{
+    height: fit-content;
+}
+
+.services-sec{
+    height: fit-content;
+}
+
+.contact-sec{
+    width: 100%;
+}
+
+.home-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.messages{
+    width: 800px;
+    margin-top: 170px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    font-size: large;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.picture{
+    height: 240px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(images/versa.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(14, 27, 1, 0.5);
+}
+
+.names{
+    color: orange;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(244, 205, 87);
+}
+
+.quali{
+    color: orange;
+}
+
+.studies{
+    color: orange;
+}
+
+.about-box{
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.info-box{
+    display: flex;
+}
+
+.first-info{
+   padding: 10px; 
+}
+
+.info-buttons{
+    margin-top: 70px;
+}
+
+.school{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education{
+    flex-grow: 1;
+    flex-basis: 100;
+    text-align: center;
+    margin-top: 50px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(14, 27, 1, 0.5);
+}
+
+.services-box{
+    padding: 20px;
+}
+
+.services-main-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.web{
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 200;
+    margin-block: 30px;
+    margin-inline: 30px;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(14, 27, 1, 0.5);
+}
+
+.portfolio-sec{
+    height: fit-content;
+}
+
+.portfolio-box{
+    padding: 20px;
+}
+
+.grocery{
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(14, 27, 1, 0.5);
+}
+
+.gro-pic{
+    margin: 10px;
+    height: 200px;
+}
+
+.contact-box{
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+}
+
+.contact-title{
+    padding: 20px;
+}
+
+.contact-info{
+    margin-top: 80px;
+}
+
+.sub-title{
+    color: orange;
+}
+
+.contact-me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.call{
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 200;
+    margin: 30px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(14, 27, 1, 0.5);
+}
+
+.send{
+    margin-top: 30px;
+}
+
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: orange;
+    box-shadow: 0 0 10px rgba(14, 27, 1, 0.5);
+}
+
+.active{
+    display: block;
+}
+
+.hide{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 100vh;
+    width: 150px;
+    z-index: 999;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.704);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+}
+
+.hide li a{
+    display: block;
+}
+
+.hide li :hover{
+    background-color: orange;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.cross-btn{
+    margin: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+#more-about-me{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #f5fcfa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+#container-box{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.con-info{
+    background-color: #f5fcfa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.social{
+    margin: 20px;
+}
+
+svg{
+    cursor: pointer;
+}
+
+.light-btn{
+    display: none;
+}
+
+.dark-box{
+    display: flex;
+    border-color: black;
+    width: 100px;
+    height: 40px;
+    background: grey;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.dark{
+    width: 50px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.light{
+    display: none;
+    width: 50px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+@media(max-width: 655px){
+
+    .main-links{
+        display: none;
+    }
+
+    .contact-two{
+        display: block;
+    }
+
+    .menu-btn{
+        display: block;
+        margin: 10px;
+    }
+
+    .info-box{
+        display: block;
+    }
+}
+
+@media(min-width: 656px){
+    .menu-btn{
+        display: none;
+    }
+
+    .cross-btn{
+        display: none;
+    }
+}
